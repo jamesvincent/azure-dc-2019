@@ -5,31 +5,31 @@
     "envName": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your environment name. It might be like this : Microsoft > msft"
+        "description": "Please provide your Environment name. It might be like this: Microsoft > msft"
       }
     },
     "vNETAddress": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your Virtual Network Address Prefix. It should be like this : 192.168.0 "
+        "description": "Please provide your Virtual Network Address Prefix. It should be like this: 10.0.0"
       }
     },
     "domainName": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your domain name. It might be like this : msft.com "
+        "description": "Please provide your Domain name. It might be like this: msft.com"
       }
     },
     "userName": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your windows user name. It shoudl be different Administrator: Mike"
+        "description": "Please provide the user name you wish to use as Local Admin"
       }
     },
     "userPassword": {
       "type": "securestring",
       "metadata": {
-        "description": "Please provide your windows user's password. It shoudl be different Administrator: Mike!s201"
+        "description": "Please provide the password you wish to use for Local Admin"
       }
     },
     "DSC_domain_1_URL": {
@@ -39,7 +39,7 @@
   "variables": {
     "vnetID": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks/',variables('vNETInfo').vNETName)]",
     "build_DC01": {
-      "vmSize": "Standard_F2s",
+      "vmSize": "Standard_B1s",
       "vMName": "[concat(parameters('envName'),'-dc-01')]",
       "vmPIPName": "[concat(parameters('envName'),'-pip-01')]",
       "vmNicName": "[concat(parameters('envName'),'-nic-01')]",

@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "userName": {
-      "value": "hadmin"
+      "value": "vmadmin"
     },
     "userPassword": {
-      "value": "Password1234"
+      "value": "Password!23"
     },
     "domainName": {
       "value": "test.com"

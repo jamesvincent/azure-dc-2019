@@ -5,13 +5,13 @@
     "envName": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your environment name. It might be like this : Microsoft > msft"
+        "description": "Please provide your Environment name. It might be like this: Microsoft > msft"
       }
     },
     "vNETAddress": {
       "type": "string",
       "metadata": {
-        "description": "Please provide your Virtual Network Address Prefix. It should be like this : 192.168.0 "
+        "description": "Please provide your Virtual Network Address Prefix. It should be like this: 10.0.0"
       }
     }
   },

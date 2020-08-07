@@ -39,7 +39,7 @@
   "variables": {
     "vnetID": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks/',variables('vNETInfo').vNETName)]",
     "vm": {
-      "vmSize": "Standard_B1s",
+      "vmSize": "Standard_D2s_v3",
       "vMName": "[concat(parameters('envName'),'-dc-01')]",
       "vmPIPName": "[concat(parameters('envName'),'-pip-01')]",
       "vmNicName": "[concat(parameters('envName'),'-nic-01')]",
